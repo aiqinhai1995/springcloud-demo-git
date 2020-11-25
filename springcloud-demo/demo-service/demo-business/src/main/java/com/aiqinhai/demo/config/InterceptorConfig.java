@@ -12,6 +12,6 @@ public class InterceptorConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new DemoInterceptor());//.addPathPatterns("/demo-business/demo1");
+        registry.addInterceptor(new DemoInterceptor());//.addPathPatterns("/demo-business/interceptordemo");
     }
 }

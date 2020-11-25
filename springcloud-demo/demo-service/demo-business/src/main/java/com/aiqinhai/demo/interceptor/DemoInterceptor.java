@@ -30,7 +30,7 @@ public class DemoInterceptor implements HandlerInterceptor {
             return;
         }
         System.out.println(request.getRequestURI().toString());
-        if(request.getRequestURI().equals("/demo-business/demo1")) {
+        if(request.getRequestURI().equals("/demo-business/interceptordemo")) {
             try{
                 String result = (String)request.getAttribute("grade");
                 System.out.println("拦截到controller的返回值！！！");
